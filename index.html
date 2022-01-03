@@ -261,8 +261,8 @@
 
       
           <h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><p>删除elasticsearch不存在的id的时候会抛出异常直接终端程序的运行。</p>
-<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>解决方法：更改 src/Elasticsearch/Connections/Connection.php 的process4xxError()方法，没有数据的时候直接返回null。</p>
-<p><img src="https://v3-file-bbcloud.babybus.com/storage/image/jpeg/9RaOo2ZB8KWqyK6YUsKgDAyiQmuIBPGSVew6mkqL.jpg" alt="1616577632172.jpg"></p>
+<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>解决方法：更改crcms/elasticsearch的源代码。位置在Elasticsearch/Connections/Connection.php 的process4xxError()方法，没有数据的时候直接返回null。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/guqingfeng0419/myImage@master/image.5z8u5wzgo880.png" alt="image"></p>
 
       
     </div>
